@@ -2,6 +2,10 @@
 set modeline
 set number
 
+" Tab-completion behaviour
+set wildmenu
+set wildmode=longest:full
+
 " Switch on file-specific plugins and indenting
 filetype plugin on
 filetype indent on

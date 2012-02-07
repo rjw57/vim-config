@@ -26,7 +26,9 @@ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " If we're using the DoxygenToolkit plugin, set the comment style to be C++ style.
 let g:DoxygenToolkit_commentType="C++"
 
-" With fugitive, auto-delete buffers when we move out of them
+" With fugitive, auto-delete buffers when we move out of them and show the
+" current git branch name in the status line.
 autocmd BufReadPost fugitive://* set bufhidden=delete
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
  
 " vim:sw=2:sts=2:et

@@ -6,6 +6,9 @@ set number
 filetype plugin on
 filetype indent on
 
+" Load bundles via pathogen
+call pathogen#infect()
+
 " Enable syntax highlighting and set an appropriate colour-scheme
 syntax on
 colorscheme zenburn

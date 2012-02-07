@@ -25,5 +25,8 @@ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " If we're using the DoxygenToolkit plugin, set the comment style to be C++ style.
 let g:DoxygenToolkit_commentType="C++"
+
+" With fugitive, auto-delete buffers when we move out of them
+autocmd BufReadPost fugitive://* set bufhidden=delete
  
 " vim:sw=2:sts=2:et

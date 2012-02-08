@@ -1,3 +1,7 @@
+" Load bundles via pathogen
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " General editor options
 set modeline
 set number
@@ -9,9 +13,6 @@ set wildmode=longest:full
 " Switch on file-specific plugins and indenting
 filetype plugin on
 filetype indent on
-
-" Load bundles via pathogen
-call pathogen#infect()
 
 " Enable syntax highlighting and set an appropriate colour-scheme
 syntax on

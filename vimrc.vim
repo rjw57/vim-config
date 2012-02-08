@@ -10,6 +10,9 @@ set number
 set wildmenu
 set wildmode=longest:full
 
+" Always show a status line
+set laststatus=2
+
 " Switch on file-specific plugins and indenting
 filetype plugin on
 filetype indent on
@@ -17,6 +20,13 @@ filetype indent on
 " Enable syntax highlighting and set an appropriate colour-scheme
 syntax on
 colorscheme zenburn
+
+" I like these colours for the status bar rather than the zenburn ones. They
+" are just the default but with fg and bg reversed.
+hi StatusLine      guibg=#313633 guifg=#ccdc90
+hi StatusLineNC    guibg=#2e3330 guifg=#88b090
+hi StatusLine      ctermbg=236   ctermfg=186
+hi StatusLineNC    ctermbg=235   ctermfg=108
 
 " Enable man-page reading via the :Man command
 runtime ftplugin/man.vim

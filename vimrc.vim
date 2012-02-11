@@ -10,6 +10,10 @@ set number
 set wildmenu
 set wildmode=longest:full
 
+" Enable spell checking
+set spell
+set spelllang=en_gb
+
 " Always show a status line
 set laststatus=2
 

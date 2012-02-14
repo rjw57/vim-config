@@ -8,7 +8,7 @@ set number
 
 " Tab-completion behaviour
 set wildmenu
-set wildmode=longest:full
+set wildmode=list:full
 
 " Enable spell checking
 set spell

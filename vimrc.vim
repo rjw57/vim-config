@@ -44,6 +44,9 @@ let g:DoxygenToolkit_commentType="C++"
 " Enable enhanced syntax highlighting for doxygen.
 let g:load_doxygen_syntax=1
 
+" For C++ files, add Doxygen-style comments to the accepted styles
+autocmd Filetype c,cpp set comments^=:///
+
 " With fugitive, auto-delete buffers when we move out of them and show the
 " current git branch name in the status line.
 autocmd BufReadPost fugitive://* set bufhidden=delete

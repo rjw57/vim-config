@@ -4,6 +4,3 @@
 [submodule "bundle/vim-latex"]
 	path = bundle/vim-latex
 	url = git://vim-latex.git.sourceforge.net/gitroot/vim-latex/vim-latex
-[submodule "bundle/slides.vim"]
-	path = bundle/slides.vim
-	url = https://github.com/eiro/slides.vim.git

@@ -59,5 +59,7 @@ let g:tex_flavor='latex'
 
 " Enable local .vimrcs
 set exrc
+
+let g:clang_use_library=1
  
 " vim:sw=2:sts=2:et

@@ -61,5 +61,10 @@ let g:tex_flavor='latex'
 set exrc
 
 let g:clang_use_library=1
- 
+
+" Use F12 to toggle filesystem tree on and off
+nmap <F12> :NERDTreeToggle<CR>
+
+
 " vim:sw=2:sts=2:et
+

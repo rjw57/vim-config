@@ -65,6 +65,8 @@ let g:clang_use_library=1
 " Use F12 to toggle filesystem tree on and off
 nmap <F12> :NERDTreeToggle<CR>
 
+" HACK to make .md mean markdown and not modula2
+autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown
 
 " vim:sw=2:sts=2:et
 

@@ -68,5 +68,9 @@ nmap <F12> :NERDTreeToggle<CR>
 " HACK to make .md mean markdown and not modula2
 autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown
 
+" When using the vim-markdown plugin, this maps code-block language names
+" to the syntax highlighter to use. Add things here as one uses them.
+let g:markdown_fenced_languages = ["javascript", "python", "css", "html", "console=sh"]
+
 " vim:sw=2:sts=2:et
 

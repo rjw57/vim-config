@@ -1,3 +1,6 @@
+" Vim doesn't like fish
+set shell=bash
+
 " Load bundles via pathogen
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()

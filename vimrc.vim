@@ -79,5 +79,8 @@ let g:markdown_fenced_languages = ["javascript", "python", "css", "html", "conso
 set listchars=tab:>-,trail:@
 set list
 
+" Ignore VCS directories and virtual environments
+let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules|bower_components|venv[23]?)$'
+
 " vim:sw=2:sts=2:et
 

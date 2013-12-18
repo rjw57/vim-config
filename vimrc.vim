@@ -75,5 +75,9 @@ autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown
 " to the syntax highlighter to use. Add things here as one uses them.
 let g:markdown_fenced_languages = ["javascript", "python", "css", "html", "console=sh"]
 
+" Set characters to show for trailing whitespace/tabs
+set listchars=tab:>-,trail:@
+set list
+
 " vim:sw=2:sts=2:et
 

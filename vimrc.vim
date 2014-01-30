@@ -83,5 +83,9 @@ set list
 " Ignore VCS directories and virtual environments
 let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules|bower_components|venv[23]?)$'
 
+" Some files we definitely do not want to complete when matching files or
+" directories
+set wildignore+=*.egg,*.egg-info,*.pyc " Python-related files
+
 " vim:sw=2:sts=2:et
 

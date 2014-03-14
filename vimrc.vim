@@ -2,6 +2,7 @@
 set shell=bash
 
 " Load bundles via pathogen
+call pathogen#infect()
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 

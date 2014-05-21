@@ -64,7 +64,7 @@ let g:tex_flavor='latex'
 " Enable local .vimrcs
 set exrc
 
-let g:clang_use_library=1
+" let g:clang_use_library=1
 " let g:clang_library_path="/usr/lib/llvm-3.2/lib/"
 
 " Use F12 to toggle filesystem tree on and off

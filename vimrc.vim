@@ -88,5 +88,9 @@ let g:ctrlp_custom_ignore = '\v[\/](\.(git|hg|svn)|node_modules|bower_components
 " directories
 set wildignore+=*.egg,*.egg-info,*.pyc " Python-related files
 
+" Specify that we store swap files inside ~/.vim.
+" TODO: make this portable to non-Unix systems
+set directory=$HOME/.vim/tmp//
+
 " vim:sw=2:sts=2:et
 

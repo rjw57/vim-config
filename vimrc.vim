@@ -53,6 +53,7 @@ autocmd Filetype c,cpp set comments^=:///
 
 " I never write common LISP but quite often write OpenCL kernels :)
 autocmd BufRead,BufNewFile *.cl set filetype=opencl
+autocmd BufRead,BufNewFile *.cl set cindent
 
 " With fugitive, auto-delete buffers when we move out of them and show the
 " current git branch name in the status line.

@@ -51,6 +51,9 @@ let g:load_doxygen_syntax=1
 " For C++ files, add Doxygen-style comments to the accepted styles
 autocmd Filetype c,cpp set comments^=:///
 
+" I never write common LISP but quite often write OpenCL kernels :)
+autocmd BufRead,BufNewFile *.cl set filetype=opencl
+
 " With fugitive, auto-delete buffers when we move out of them and show the
 " current git branch name in the status line.
 autocmd BufReadPost fugitive://* set bufhidden=delete

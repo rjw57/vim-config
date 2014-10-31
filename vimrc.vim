@@ -65,6 +65,9 @@ set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
 
+" Set the default encoding to be UTF-8
+set encoding=utf-8
+
 " Enable local .vimrcs
 set exrc
 

@@ -2,3 +2,6 @@
 
 .netrwhist
 tmp/*.swp
+
+# vundle-managed bundles
+bundle

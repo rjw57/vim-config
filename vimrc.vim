@@ -1,6 +1,20 @@
 " Vim doesn't like fish
 set shell=bash
 
+" Vundle config
+set nocompatible
+filetype off
+
+" set the runtime path to include Vundle and initialize
+" FIXME: remove hard-coded path
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+call vundle#end()            " required
+
 " Load bundles via pathogen
 call pathogen#infect()
 call pathogen#runtime_append_all_bundles()

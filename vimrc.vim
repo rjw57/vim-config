@@ -27,11 +27,6 @@ Plugin 'tpope/vim-vinegar'
 
 call vundle#end()            " required
 
-" Load bundles via pathogen
-call pathogen#infect()
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
-
 " General editor options
 set modeline
 set number

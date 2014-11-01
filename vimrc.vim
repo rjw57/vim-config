@@ -23,6 +23,7 @@ Plugin 'vim-scripts/opencl.vim'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'tpope/vim-vinegar'
 
 call vundle#end()            " required
 

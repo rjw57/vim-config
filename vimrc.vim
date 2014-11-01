@@ -13,6 +13,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" Other plugins
+Plugin 'tpope/vim-fugitive'
+
 call vundle#end()            " required
 
 " Load bundles via pathogen

@@ -20,6 +20,7 @@ Plugin 'fatih/vim-go'
 Plugin 'kien/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-scripts/opencl.vim'
+Plugin 'kchmck/vim-coffee-script'
 
 call vundle#end()            " required
 

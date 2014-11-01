@@ -5,3 +5,6 @@ tmp/*.swp
 
 # vundle-managed bundles
 bundle
+
+# Local dictionary
+spell

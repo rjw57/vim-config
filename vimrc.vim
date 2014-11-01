@@ -15,6 +15,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Other plugins
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()            " required
 

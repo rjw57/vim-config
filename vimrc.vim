@@ -24,6 +24,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-vinegar'
+Plugin 'Lokaltog/vim-powerline'
 
 call vundle#end()            " required
 

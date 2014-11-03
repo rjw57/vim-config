@@ -107,7 +107,7 @@ autocmd BufWinEnter *.{md,mkd,mkdn,mark*} silent setf markdown
 let g:markdown_fenced_languages = ["javascript", "python", "css", "html", "console=sh"]
 
 " Set characters to show for trailing whitespace/tabs
-set listchars=tab:▸\ ,trail:·
+set listchars=tab:›\ ,trail:·
 set list
 
 " Ignore VCS directories and virtual environments

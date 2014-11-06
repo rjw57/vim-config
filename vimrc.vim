@@ -126,5 +126,8 @@ au FileType go nmap <leader>i :GoImports<CR>
 au FileType go nmap <leader>n :GoInstall ./...<CR>
 au FileType go nmap <leader>N :GoInstall<CR>
 
+" Make pylint slightly less spammy
+let g:syntastic_python_pylint_args = "--disable invalid-name,missing-docstring"
+
 " vim:sw=2:sts=2:et
 

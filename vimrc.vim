@@ -127,7 +127,10 @@ au FileType go nmap <leader>n :GoInstall ./...<CR>
 au FileType go nmap <leader>N :GoInstall<CR>
 
 " Make pylint slightly less spammy
-let g:syntastic_python_pylint_args = "--disable invalid-name,missing-docstring"
+let g:syntastic_python_pylint_args = "--disable invalid-name,missing-docstring,fixme"
+
+" Support using jsxhit rather than jshint with syntasic
+autocmd BufRead,BufNewFile *.jsx let g:syntastic_javascript_checkers = ['jsxhint']
 
 " vim:sw=2:sts=2:et
 

@@ -121,11 +121,6 @@ set wildignore+=*.egg,*.egg-info,*.pyc " Python-related files
 " TODO: make this portable to non-Unix systems
 set directory=$HOME/.vim/tmp//
 
-" Mappings for vim-go
-au FileType go nmap <leader>i :GoImports<CR>
-au FileType go nmap <leader>n :GoInstall ./...<CR>
-au FileType go nmap <leader>N :GoInstall<CR>
-
 " Make pylint slightly less spammy
 let g:syntastic_python_pylint_args = "--disable invalid-name,missing-docstring,fixme"
 

@@ -8,4 +8,5 @@ nmap <Leader>gc :Gcommit<CR>
 au FileType go nmap <leader>i :GoImports<CR>
 au FileType go nmap <leader>n :GoInstall ./...<CR>
 au FileType go nmap <leader>N :GoInstall<CR>
+au FileType go nmap <leader>r :GoRun<CR>
 

@@ -132,5 +132,9 @@ let g:syntastic_python_pylint_args = "--disable invalid-name,missing-docstring,f
 " Support using jsxhit rather than jshint with syntasic
 autocmd BufRead,BufNewFile *.jsx let g:syntastic_javascript_checkers = ['jsxhint']
 
+" Leader key is backtick and load special configuration
+let mapleader = "`"
+source $HOME/.vim/leaders.vim
+
 " vim:sw=2:sts=2:et
 

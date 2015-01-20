@@ -25,6 +25,8 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-vinegar'
 Plugin 'Lokaltog/vim-powerline'
+Plugin 'sudar/vim-arduino-syntax'
+Plugin 'jplaut/vim-arduino-ino'
 
 call vundle#end()            " required
 

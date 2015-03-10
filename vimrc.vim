@@ -134,5 +134,12 @@ autocmd BufRead,BufNewFile *.jsx let g:syntastic_javascript_checkers = ['jsxhint
 " Load leader key commands
 source $HOME/.vim/leaders.vim
 
+" Highlight column 1 after textwidth
+set textwidth=80
+set colorcolumn=+1
+
+" Make colorcolumn look nicer
+hi ColorColumn guibg=#262626 ctermbg=235
+
 " vim:sw=2:sts=2:et
 

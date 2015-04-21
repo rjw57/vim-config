@@ -141,5 +141,8 @@ set colorcolumn=+1
 " Make colorcolumn look nicer
 hi ColorColumn guibg=#262626 ctermbg=235
 
+" Specific autocmds
+source $HOME/.vim/autocmds.vim
+
 " vim:sw=2:sts=2:et
 

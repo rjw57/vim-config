@@ -29,6 +29,7 @@ Plugin 'sudar/vim-arduino-syntax'
 Plugin 'jplaut/vim-arduino-ino'
 Plugin 'killphi/vim-ebnf'
 Plugin 'groenewege/vim-less'
+Plugin 'tpope/vim-abolish'
 
 call vundle#end()            " required
 

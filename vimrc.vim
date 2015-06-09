@@ -142,6 +142,9 @@ set colorcolumn=+1
 " Make colorcolumn look nicer
 hi ColorColumn guibg=#262626 ctermbg=235
 
+" Don't start with any folds
+set foldlevelstart=99
+
 " Specific autocmds
 source $HOME/.vim/autocmds.vim
 

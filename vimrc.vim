@@ -30,6 +30,7 @@ Plugin 'jplaut/vim-arduino-ino'
 Plugin 'killphi/vim-ebnf'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-abolish'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 
@@ -54,7 +55,8 @@ filetype indent on
 
 " Enable syntax highlighting and set an appropriate colour-scheme
 syntax on
-colorscheme zenburn
+set background=dark
+colorscheme solarized
 
 " I like these colours for the status bar rather than the zenburn ones. They
 " are just the default but with fg and bg reversed.

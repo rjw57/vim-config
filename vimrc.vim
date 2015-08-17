@@ -55,7 +55,7 @@ filetype indent on
 
 " Enable syntax highlighting and set an appropriate colour-scheme
 syntax on
-set background=light
+set background=dark
 colorscheme solarized
 
 " I like these colours for the status bar rather than the zenburn ones. They

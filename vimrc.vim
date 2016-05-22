@@ -31,6 +31,7 @@ Plugin 'killphi/vim-ebnf'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-abolish'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'klen/python-mode'
 
 call vundle#end()            " required
 

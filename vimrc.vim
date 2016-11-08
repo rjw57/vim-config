@@ -86,6 +86,9 @@ autocmd Filetype c,cpp set comments^=:///
 autocmd BufRead,BufNewFile *.cl set filetype=opencl
 autocmd BufRead,BufNewFile *.cl set cindent
 
+" Typescript + JSX
+autocmd BufRead,BufNewFile *.tsx set filetype=typescript
+
 " With fugitive, auto-delete buffers when we move out of them and show the
 " current git branch name in the status line.
 autocmd BufReadPost fugitive://* set bufhidden=delete

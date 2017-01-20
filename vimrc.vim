@@ -155,5 +155,9 @@ set foldlevelstart=99
 " Specific autocmds
 source $HOME/.vim/autocmds.vim
 
+" Magic file watchers like webpack sometimes fail to notice edits unless this is
+" set.
+set backupcopy=yes
+
 " vim:sw=2:sts=2:et
 

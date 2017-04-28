@@ -33,6 +33,7 @@ Plugin 'tpope/vim-abolish'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'maxbane/vim-asm_ca65'
 Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()            " required
 

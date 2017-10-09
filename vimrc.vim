@@ -160,5 +160,7 @@ source $HOME/.vim/autocmds.vim
 " set.
 set backupcopy=yes
 
-" vim:sw=2:sts=2:et
+" Tell vim that Jenkinsfiles use Groovy
+au BufNewFile,BufRead Jenkinsfile setf groovy
 
+" vim:sw=2:sts=2:et

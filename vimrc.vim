@@ -1,6 +1,21 @@
 " Vim doesn't like fish
 set shell=bash
 
+" This setting needs to be set *before( syntastic is loaded by Vundle
+let g:syntastic_mode_map = {
+      \ 'mode': 'active',
+      \ 'passive_filetypes': ['python'] }
+
+" While we are configuring syntastic, add the recommended settings:
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+
 " Vundle config
 set nocompatible
 filetype off
@@ -8,6 +23,7 @@ filetype off
 " set the runtime path to include Vundle and initialize
 " FIXME: remove hard-coded path
 set rtp+=~/.vim/bundle/Vundle.vim
+
 call vundle#begin()
 
 " let Vundle manage Vundle, required
@@ -34,6 +50,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'maxbane/vim-asm_ca65'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'rust-lang/rust.vim'
+Plugin 'python-mode/python-mode'
 
 call vundle#end()            " required
 
@@ -134,9 +151,6 @@ set wildignore+=*.egg,*.egg-info,*.pyc " Python-related files
 " TODO: make this portable to non-Unix systems
 set directory=$HOME/.vim/tmp//
 
-" Make pylint slightly less spammy
-let g:syntastic_python_pylint_args = "--disable invalid-name,missing-docstring,fixme"
-
 " Support using jsxhit rather than jshint with syntasic
 autocmd BufRead,BufNewFile *.jsx let g:syntastic_javascript_checkers = ['jsxhint']
 
@@ -162,5 +176,8 @@ set backupcopy=yes
 
 " Tell vim that Jenkinsfiles use Groovy
 au BufNewFile,BufRead Jenkinsfile setf groovy
+
+" Make saving Python files less time-consuming!
+let g:pymode_lint_on_write = 0
 
 " vim:sw=2:sts=2:et

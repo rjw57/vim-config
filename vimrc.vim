@@ -179,7 +179,8 @@ set backupcopy=yes
 " Tell vim that Jenkinsfiles use Groovy
 au BufNewFile,BufRead Jenkinsfile setf groovy
 
-" Make saving Python files less time-consuming!
+" Pymode configuration
 let g:pymode_lint_on_write = 0
+let g:pymode_rope_complete_on_dot = 0
 
 " vim:sw=2:sts=2:et

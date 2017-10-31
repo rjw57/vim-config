@@ -190,4 +190,7 @@ au BufNewFile,BufRead Jenkinsfile setf groovy
 let g:pymode_lint_on_write = 0
 let g:pymode_rope_complete_on_dot = 0
 
+" RAML files are YAML
+au BufNewFile,BufRead *.raml setf yaml
+
 " vim:sw=2:sts=2:et

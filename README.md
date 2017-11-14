@@ -1,7 +1,7 @@
 ## Quickstart
 
 ```console
-$ git clone git@github.com:rjw57/vim-config ~/.vim
-$ ln -s ~/.vim/vimrc ~/.vimrc
+$ git clone https://github.com/rjw57/vim-config ~/.vim
+$ ln -s ~/.vim/vimrc.vim ~/.vimrc
 $ vim +PluginInstall
 ```

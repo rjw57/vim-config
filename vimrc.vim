@@ -34,7 +34,7 @@ Plugin 'gmarik/Vundle.vim'
 " Other plugins
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/syntastic'
-Plugin 'fatih/vim-go'
+"Plugin 'fatih/vim-go'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'vim-scripts/opencl.vim'
@@ -52,7 +52,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'maxbane/vim-asm_ca65'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'rust-lang/rust.vim'
-Plugin 'python-mode/python-mode'
+"Plugin 'python-mode/python-mode'
 
 call vundle#end()            " required
 

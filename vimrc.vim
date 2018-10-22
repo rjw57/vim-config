@@ -53,6 +53,8 @@ Plugin 'maxbane/vim-asm_ca65'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'rust-lang/rust.vim'
 "Plugin 'python-mode/python-mode'
+Plugin 'aklt/plantuml-syntax'
+Plugin 'hashivim/vim-terraform'
 
 call vundle#end()            " required
 
@@ -189,6 +191,7 @@ au BufNewFile,BufRead Jenkinsfile setf groovy
 " Pymode configuration
 let g:pymode_lint_on_write = 0
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode = 0
 
 " RAML files are YAML
 au BufWinEnter,BufNewFile,BufRead *.raml setf yaml

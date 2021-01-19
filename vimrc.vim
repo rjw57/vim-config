@@ -57,6 +57,8 @@ Plugin 'aklt/plantuml-syntax'
 Plugin 'hashivim/vim-terraform'
 Plugin 'letorbi/vim-colors-modern-borland'
 Plugin 'lifepillar/vim-solarized8'
+Plugin 'chriskempson/base16-vim'
+Plugin 'caglartoklu/borlandp.vim'
 
 call vundle#end()            " required
 
@@ -80,12 +82,24 @@ filetype plugin on
 filetype indent on
 
 " Enable syntax highlighting and set an appropriate colour-scheme
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+
 set background=dark
-let g:solarized_termcolors=256
-colorscheme solarized
+" let g:solarized_termcolors=256
+let g:borlandp_bg = "dark_blue"
+" colorscheme solarized
 " colorscheme solarized8
-"colorscheme borland
+" colorscheme borland
+colorscheme borlandp
+" colorscheme base16-default-dark
 syntax on
+
+hi clear SpellBad
+hi SpellBad cterm=underline
 
 " I like these colours for the status bar rather than the zenburn ones. They
 " are just the default but with fg and bg reversed.

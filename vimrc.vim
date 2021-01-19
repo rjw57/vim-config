@@ -55,6 +55,7 @@ Plugin 'rust-lang/rust.vim'
 "Plugin 'python-mode/python-mode'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'hashivim/vim-terraform'
+Plugin 'letorbi/vim-colors-modern-borland'
 
 call vundle#end()            " required
 
@@ -80,7 +81,8 @@ filetype indent on
 " Enable syntax highlighting and set an appropriate colour-scheme
 syntax on
 set background=dark
-colorscheme solarized
+" colorscheme solarized
+colorscheme borland
 
 " I like these colours for the status bar rather than the zenburn ones. They
 " are just the default but with fg and bg reversed.

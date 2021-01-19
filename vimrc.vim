@@ -56,6 +56,7 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'hashivim/vim-terraform'
 Plugin 'letorbi/vim-colors-modern-borland'
+Plugin 'lifepillar/vim-solarized8'
 
 call vundle#end()            " required
 
@@ -82,7 +83,8 @@ filetype indent on
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
-" colorscheme borland
+" colorscheme solarized8
+"colorscheme borland
 syntax on
 
 " I like these colours for the status bar rather than the zenburn ones. They

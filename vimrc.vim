@@ -79,10 +79,11 @@ filetype plugin on
 filetype indent on
 
 " Enable syntax highlighting and set an appropriate colour-scheme
-syntax on
 set background=dark
-" colorscheme solarized
-colorscheme borland
+let g:solarized_termcolors=256
+colorscheme solarized
+" colorscheme borland
+syntax on
 
 " I like these colours for the status bar rather than the zenburn ones. They
 " are just the default but with fg and bg reversed.

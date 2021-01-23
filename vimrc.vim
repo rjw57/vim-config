@@ -91,10 +91,10 @@ endif
 set background=dark
 " let g:solarized_termcolors=256
 let g:borlandp_bg = "dark_blue"
-" colorscheme solarized
+colorscheme solarized
 " colorscheme solarized8
 " colorscheme borland
-colorscheme borlandp
+" colorscheme borlandp
 " colorscheme base16-default-dark
 syntax on
 

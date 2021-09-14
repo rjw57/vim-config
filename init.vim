@@ -48,7 +48,7 @@ Plugin 'jplaut/vim-arduino-ino'
 Plugin 'killphi/vim-ebnf'
 Plugin 'groenewege/vim-less'
 Plugin 'tpope/vim-abolish'
-Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 Plugin 'maxbane/vim-asm_ca65'
 Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'rust-lang/rust.vim'
@@ -56,15 +56,18 @@ Plugin 'rust-lang/rust.vim'
 Plugin 'aklt/plantuml-syntax'
 Plugin 'hashivim/vim-terraform'
 Plugin 'letorbi/vim-colors-modern-borland'
-Plugin 'lifepillar/vim-solarized8'
+"Plugin 'lifepillar/vim-solarized8'
 Plugin 'chriskempson/base16-vim'
 Plugin 'caglartoklu/borlandp.vim'
+Plugin 'ericbn/vim-solarized'
 
 call vundle#end()            " required
 
 " General editor options
 set modeline
 set number
+set nohlsearch
+set noincsearch
 
 " Tab-completion behaviour
 set wildmenu
@@ -83,14 +86,13 @@ filetype indent on
 
 " Enable syntax highlighting and set an appropriate colour-scheme
 if exists('+termguicolors')
-  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  "let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
   set termguicolors
 endif
 
 set background=dark
-"let g:solarized_termcolors=256
-let g:borlandp_bg = "dark_blue"
+"let g:borlandp_bg = "dark_blue"
 colorscheme solarized
 " colorscheme solarized8
 " colorscheme borland

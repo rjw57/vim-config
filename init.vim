@@ -82,11 +82,11 @@ filetype plugin on
 filetype indent on
 
 " Enable syntax highlighting and set an appropriate colour-scheme
-"if exists('+termguicolors')
-"  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-"  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"  set termguicolors
-"endif
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
 
 set background=dark
 "let g:solarized_termcolors=256

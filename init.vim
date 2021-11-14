@@ -18,6 +18,12 @@ let g:syntastic_check_on_wq = 0
 " Python-specific syntastic options
 let g:syntastic_python_checkers = ['flake8']
 
+" JS-specific syntasic options
+let g:syntastic_javascript_checkers=['eslint']
+let g:syntastic_javascript_eslint_exe='$(npm bin)/eslint'
+let g:syntastic_typescript_checkers=['eslint']
+let g:syntastic_typescript_eslint_exe='$(npm bin)/eslint'
+
 " Vundle config
 set nocompatible
 filetype off
@@ -33,7 +39,8 @@ Plugin 'gmarik/Vundle.vim'
 
 " Other plugins
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
+Plugin 'dense-analysis/ale'
 "Plugin 'fatih/vim-go'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'editorconfig/editorconfig-vim'

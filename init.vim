@@ -68,6 +68,8 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'caglartoklu/borlandp.vim'
 Plugin 'ericbn/vim-solarized'
 Plugin 'nvim-treesitter/nvim-treesitter'
+Plugin 'neovim/nvim-lspconfig'
+Plugin 'lewis6991/spellsitter.nvim'
 
 call vundle#end()            " required
 
@@ -229,9 +231,11 @@ require'nvim-treesitter.configs'.setup {
   sync_install = false,
   highlight = {
     enable = true,
-    additional_vim_regex_highlighting = false,
+    additional_vim_regex_highlighting = true,
   },
 }
 EOF
+
+lua require('spellsitter').setup()
 
 " vim:sw=2:sts=2:et

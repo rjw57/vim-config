@@ -218,4 +218,20 @@ let g:pymode = 0
 " RAML files are YAML
 au BufWinEnter,BufNewFile,BufRead *.raml setf yaml
 
+" Treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {
+    "python", "javascript", "typescript", "tsx", "vim",
+    "dockerfile", "bash", "json", "dot", "go", "cpp", "lua",
+    "html", "css", "gomod", "regex", "yaml"
+  },
+  sync_install = false,
+  highlight = {
+    enable = true,
+    additional_vim_regex_highlighting = false,
+  },
+}
+EOF
+
 " vim:sw=2:sts=2:et

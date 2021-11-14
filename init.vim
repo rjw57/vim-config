@@ -67,6 +67,7 @@ Plugin 'letorbi/vim-colors-modern-borland'
 Plugin 'chriskempson/base16-vim'
 Plugin 'caglartoklu/borlandp.vim'
 Plugin 'ericbn/vim-solarized'
+Plugin 'nvim-treesitter/nvim-treesitter'
 
 call vundle#end()            " required
 

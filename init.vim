@@ -133,7 +133,7 @@ autocmd BufRead,BufNewFile *.cl set filetype=opencl
 autocmd BufRead,BufNewFile *.cl set cindent
 
 " Typescript + JSX
-autocmd BufRead,BufNewFile *.tsx set filetype=typescript
+autocmd BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 
 " With fugitive, auto-delete buffers when we move out of them and show the
 " current git branch name in the status line.

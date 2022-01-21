@@ -288,4 +288,9 @@ for _, lsp in ipairs(servers) do
 end
 EOF
 
+let g:ale_fixers = {
+\   'javascript': ['prettier', 'eslint', 'remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['autoflake', 'autoimport', 'autopep8', 'reorder-python-imports', 'remove_trailing_lines', 'trim_whitespace'],
+\}
+
 " vim:sw=2:sts=2:et

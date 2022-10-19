@@ -70,6 +70,7 @@ Plugin 'ericbn/vim-solarized'
 Plugin 'nvim-treesitter/nvim-treesitter'
 Plugin 'neovim/nvim-lspconfig'
 Plugin 'lewis6991/spellsitter.nvim'
+Plugin 'ggandor/leap.nvim'
 
 call vundle#end()            " required
 
@@ -293,4 +294,5 @@ let g:ale_fixers = {
 \   'python': ['autoflake', 'autoimport', 'autopep8', 'reorder-python-imports', 'remove_trailing_lines', 'trim_whitespace'],
 \}
 
+lua require('leap').add_default_mappings()
 " vim:sw=2:sts=2:et
